@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+}
+.bg-img {
+    /* The image used */
+    
+    background-image: url("imgs/idk.jpg");
+    min-height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+    
+  }
+  .topnav {
+    overflow: hidden;
+  }
+  /* Navbar links */
+  .topnav a {
+    font-family: cursive;
+
+    color: #fda004;
+    text-align: center;
+    padding-left: 15px;
+    float: left;
+    margin-top: 15px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .barra a{
+    margin-left: 60px;
+  }
+
+  
+  .topnav a:hover {
+    color: orangered;
+  }
+.topnav img{
+  float: left;
+  margin-right: 100px;
+  width: 150px;
+} 
+em{
+    font-style: normal;
+    font-family: cursive;
+    color:aliceblue;
+}
+.titulo{
+    margin-top: 40px;
+    color: white;
+    text-align: right;
+ 
+}
+.gallery {
+    
+    margin-top: 100px;
+    border: 1px solid #ccc;
+    margin-left: 500px;  
+    width: 180px;
+  
+    
+
+  }
+  
+.gallery:hover {
+    border-bottom: 1px solid #777;
+  }
+  
+.gallery img {
+
+    width: 100%;
+   
+  }
+  
+.desc {
+   
+    color: rgb(0, 0, 0)e;
+    font-family: fantasy;
+    font-size: 20px;
+    padding-bottom : 30px;
+    text-align: center;
+  }
