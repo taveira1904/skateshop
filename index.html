@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ad17b4ca80.js" crossorigin="anonymous"></script>
+  
     <link rel="stylesheet" href="general.css">
    
     <title>3Flip Skateshop</title>
@@ -19,27 +21,24 @@
             <img src="imgs/3flip1-removebg-preview__1_-removebg-preview.png">
             <a href="#"><em>Home</em></a>
             <a href="tabuas.html">Tábuas</a>
-            <a href="  ">Rolamentos</a>
+            <a href=" rolamentos.html ">Rolamentos</a>
              <a href="lixas.html">Lixas</a>
              <a href="#contact">Trucks</a>
-            <a href="#">Skates Completos</a>
             <a href="#section1  ">Sk8 Arts</a>
+            <a href="galeria.html">Galeria</a>
+
+            <div class="login">
+              <a href="login.html">Login/Registar</a>
+            </div>
            
-          
-            <div class="barra">
-              <a>|</a>
-             
-            </div> 
+    
             
            
             
           </div>
           <h2>Compra com a maior das <em>seguranças</em></h2>
-          <div class="imagem">
-            <img src="imgs/local.webp" alt="skate" height="400" width="530">
-            <h4>Support always your local sk8ters</h4>
-          </div>
-          <h3>Dedicados a todos os sk8ters,<br> nós unimos forças para tornar o skate seguro,<br> divertido, desafiador e apaixonado.</h3>
+        
+          <h3><br><br><br><br><br><br>Dedicados a todos os sk8ters,<br> nós unimos forças para tornar o skate seguro,<br> divertido, desafiador e apaixonado.</h3>
           <button class="botao">Shop now</button>
           <button class="botao1">Descobre mais !</button>
         </div>
@@ -47,44 +46,174 @@
       
 </header>
 <body>
-<div class="nos">
-  <div class="sobre">
-  <img class="skate"src="imgs/sobre.jfif" alt="sk8" width="480px" height="600px">
- 
-  <h1>Sobre nós</h1>
-    <p>Este site tem como principal objetivo <br>informar e fazer compras de alguns produtos<br> que serão disponibilizados na plataforma,<br> esperemos que seja do agrado do utilizador, <br>caso haja alguma dúvida ou algum erro não hesite <br>em contactar-nos. </p>
+
+  <section  class="about">
+    <div class="main">
+      <img src="imgs/sobre.jfif">
+      <div class="about-text">
+        <h1>Sobre nos</h1>
+      
+        <p>Este site tem como principal objetivo informar e fazer compras de alguns produtos
+           que serão disponibilizados na plataforma, esperemos que seja do agrado do utilizador,
+            caso haja alguma dúvida ou algum erro não hesite em contactar-nos.
+         <br><br> No site conta com várias abas distintas, como por exemplo, aba de<a href="tabuas.html"> Tábuas </a>,<a href="Rolamentos.html"> Rolamentos </a>,<a href="lixas.html"> Lixas </a>, 
+          pode também observar a aba <a href="galeria.html"> Galeria </a> onde serão postadas algumas fotos de skaters locais e mundiais.</p>
+            <button type="button">Começar a comprar</button>
+      </div>
+    </div>
+  </section>
+
+<div class="destaques">
+  <h1>Principais Tabuas em destaque</h1>
+  <p>Descobre mais na aba de <a href="tabuas.html">Tábuas</a></p>
+
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="imgs/spiderman.png">
     
+    </div>
+  
+    <div class="mySlides fade">
+      
+      <img src="imgs/tabua-baker-justin-figgy.png">
+      
+    </div>
+  
+    <div class="mySlides fade">
+      
+      <img src="imgs/tabua-baker-jacopo-carozzi.png">
+     
+    </div>
+
+      
+    <div class="mySlides fade">
+      
+      <img src="imgs/tabua-baker-kader-sylla-frenz-825-removebg-preview.png">
+     
+    </div>
+
+  
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  
   </div>
 </div>
 
-<div class="destaques">
-  <h1>Destaques</h1>
-  <div class="caption-container">
-    <p id="caption"></p>
+<script type="text/javascript">
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+
+<div class="test">
+  <h3>Testemunhos sobre a modalidade do Skate</h3>
+<div class="testemunho">
+ 
+  <div class="item">
+    
+    <div class="img">
+      <img src="imgs/vasco.jpg" alt="1_pessoa">
+    </div>
+    <div class="name">Vasco Sousa</div>
+    <div class="content">
+        <h1><i class="fas fa-quote-left"></i></i></h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti temporibus 
+          vitae veniam fugit ut consequuntur voluptas iure, tenetur ullam consectetur alias 
+          nobis laudantium enim fugiat consequatur laboriosam. Autem, amet nesciunt!</p>
+          <div class="stars">
+
+          </div>
+    </div>
+</div>
+
+<div class="item">
+  <div class="img">
+    <img src="imgs/tomas.jpg" alt="1_pessoa">
+  </div>
+  <div class="name">Tomás Ferreira</div>
+  <div class="content">
+      <h1><i class="fas fa-quote-left"></i></i></h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti temporibus 
+        vitae veniam fugit ut consequuntur voluptas iure, tenetur ullam consectetur alias 
+        nobis laudantium enim fugiat consequatur laboriosam. Autem, amet nesciunt!</p>
+        <div class="stars">
+
+        </div>
+  </div>
+</div>
+
+<div class="item">
+  <div class="img">
+    <img src="imgs" alt="1_pessoa">
+  </div>
+  <div class="name">João Cortereal</div>
+  <div class="content">
+      <h1><i class="fas fa-quote-left"></i></i></h1>
+      <p>"Há uma visão muito clara que tenho sobre o que é skatar!"</p>
+        <div class="stars">
+
+        </div>
+  </div>
+</div>
+
+
+</div>
+
+ 
   </div>
 
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="imgs/jart_2.png" style="width:100%"  alt="The Woods">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="imgs/jart_3.png" style="width:85%" alt="Cinque Terre">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="imgs/jart_4-removebg-preview (1).png" style="width:100%"  alt="Mountains and fjords"<a>adasd</a>
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="imgs/jart_2.png" style="width:100%"  alt="Northern Lights"<a>dww</a>
-    </div>
-   
-  </div>
+  <div class="footer">
+    <footer>
+      <h1>©Copyright 3Flip SkateShop</h1>
+    </footer>
 
   </div>
-  
-
-
-
 
 
 </body>
 </html>
+
+

@@ -46,6 +46,11 @@
   margin-right: 100px;
   width: 150px;
 } 
+
+.login{
+  float: left;
+  margin-left: 100px;
+}
 h2{
   margin-left: 100px;
   float: left;
@@ -55,6 +60,8 @@ h2{
   color: aliceblue;
 }
 h3{
+  display: block;
+  
   font-size: 20px;
   font-family: monospace;
   margin-left: 100px;
@@ -69,20 +76,7 @@ em{
 .topnav a em{
   color: white;
 }
-.imagem{
-  max-width: 100%;
-  margin-top: 100px;
-  margin-left: 400px;
-  float: right;
-}
-.imagem h4{
-  width: auto;
-  text-align: center;
-  margin-top: 0;
-  border-radius: 5px;
-  border: 1px solid #fda004;;
-  color: #fda004;
-}
+
 
 .botao{
   color: white;
@@ -120,55 +114,14 @@ background-color: #fda004;
 body{
   margin: 0;
 }
-.nos h1{
- color:  #fda004;
-font-family: cursive;
-float: left;
-font-size: 35px;
-margin-left: 100px;
-margin-top: 250px;
-}
-.nos{
-  min-height: 1000px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-background-image: url("imgs/background.jpg");
-}
-p{
-  font-size: 20px;
-  margin-right: 200px;
-   margin-left: 100px;
-    float: left;
-    color: white;
-    
-  }
-  .sobre .botao{
-   
-   margin-right: 630px;
-    float: right;
-  }
-.skate{
-  
-  margin-left:450px ;
-  float: left;
-  margin-top: 100px;
-  border-radius: 10px;
-  
-} 
-.destaques{
-  background-image: url("imgs/bricks.jfif");
-  padding-top: 10px;
-height: 1000px;
-  font-size: 30px;
 
+.about a{
+  text-decoration: none;
+  color: #fda004;
 }
-.destaques h1{
-  color:  #fda004;
-  font-family: cursive;
-  text-align: center;
+.about a:hover{
+  color: rgb(216, 199, 46);
 }
-
 
 
 
@@ -179,10 +132,11 @@ height: 1000px;
 
 /* Six columns side by side */
 .column {
+  
+display: inline;
+    margin-top: 100px;
+padding-left: 25px;
 
-  position: relative;
-  margin-top: 100px;
-margin-left: 40px;
   float: left;
   width: 15%;
 }
@@ -196,3 +150,280 @@ margin-left: 40px;
 .demo:hover {
   opacity: 1;
 }
+
+
+.gallery:hover {
+  border-bottom: 1px solid #777;
+}
+
+.about{
+  width: 100%;
+  padding: 78px 0px;
+  background-image:url("imgs/background.jpg");
+}
+
+.about img{
+  height: auto;
+  width: 420px;
+  margin-right: 30px;
+}
+.about text{
+  
+  width:550px;
+ 
+}
+.about h1{
+  font-size: 40px;
+    color: #fda004;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+.about p{
+color: aliceblue;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 25px;
+}
+
+.main{
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+button{
+  font-size: 15px;
+  color: white;
+  font-family: monospace;
+  border-style: solid;
+  margin-left: 10px;
+  background-color: #fda004;
+  padding: 10px 30px;
+  border: none;
+
+}
+button:hover{
+  background-color: transparent;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+}
+
+
+.destaques{
+ 
+  background-image: url("imgs/lukas-bato-Vbbn4xNBfnM-unsplash.jpg");
+  background-size: cover;
+  padding-top: 10px;
+  height: 1000px;
+  font-size: 30px;
+
+}
+.destaques a{
+  color: #04d8fd;
+  text-decoration: none;
+  font-style: normal;
+}
+.destaques h1{
+
+
+  color:  #04d8fd;
+  font-family:cursive;
+  
+  text-align: center;
+}
+.destaques p{
+  font-family: monospace;
+  text-align: center;
+}
+.destaques button{
+  margin-left: 900px;
+}
+
+
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.slideshow-container img{
+  margin-top: 150px;
+  margin-left: 250px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  margin-left: 200px;
+  margin-right: 200px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color:white;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.testemunho{
+  width: 720px;
+  margin:  auto;
+ 
+}
+.test{
+  
+  height: 800px;
+   background-image: url("imgs/background.jpg");
+ }
+ .test h3{
+   font-size: 20px;
+
+ margin-top:0;
+  padding-top: 30px;
+   text-align: center;
+
+ }
+
+.testemunho .item{
+  width: 220px;
+  margin: 110px 10px;
+  float: left;
+  background-color: rgb(215, 248, 250);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0,0.125);
+  border-radius: 25px;
+}
+.testemunho .item .img img{
+  width: 100px;
+  display: block;
+  margin: 10px auto;
+
+
+}
+
+
+.testemunho .item .name{
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.testemunho .item .content{
+ 
+padding: 20px;
+border-bottom-left-radius: 25px;
+border-bottom-right-radius: 25px;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+text-align: center;
+}
+.testemunho .item .content h1{
+
+  text-align: left;
+  color: rgb(111, 160, 233);
+}
+.testemunho .item .content p{
+  background-color: white;
+  margin-top: 0;
+  border-radius: 20px;
+  color: #000;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+ 
+  .test p{
+    float: right;
+    color: brown;
+  }
+  footer{
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+      
+    }
+    footer h1{
+      text-align: center;
+      font-family: monospace;
+      font-size: 10px;
+      color: white;
+    }

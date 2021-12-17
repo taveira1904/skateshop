@@ -54,7 +54,7 @@ em{
 .titulo{
     margin-top: 40px;
     color: white;
-    text-align: right;
+    text-align: center;
  
 }
 
@@ -65,31 +65,89 @@ body .galeria{
     background-image: url("imgs/background.jpg");
    
 }
-.gallery {
-    
-    margin: 140px;
-    border-bottom: 1px solid #ccc;
-    float: left;
-    width: 180px;
-  
-    
+div.gallery {
+  margin: 5px;
+  border-bottom: 1px solid #ccc;
+  float: left;
+  margin-left: 45px;
+  width: 270px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 
-  }
-  
-.gallery:hover {
-    border-bottom: 1px solid #777;
-  }
-  
-.gallery img {
+div.gallery:hover {
+  border-bottom: 1px solid #777;
+}
 
-    width: 100%;
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  font-size: 20px;
+  color: aliceblue;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.card {
+  
+ display: inline-block;
+  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 50px;
+  margin-left: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 100px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+
+
+
+
+
+/*
+  <div class="galeria">
+
+      <div class="gallery">
+        <a target="_blank" href="">
+          <img src="imgs/tabua-baker-justin-figgy.png" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">Tábua "Baker"<br>59.90€</div>
+      </div>
+      
+  
+      
    
-  }
-  
-.desc {
-    color: white;
-    font-family: fantasy;
-    font-size: 20px;
-    padding-bottom : 30px;
-    text-align: center;
-  }
+    </div>
+    
