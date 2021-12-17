@@ -48,8 +48,8 @@
 } 
 
 .login{
-  float: left;
-  margin-left: 100px;
+  margin-left: 200px;
+float: right;
 }
 h2{
   margin-left: 100px;
@@ -427,3 +427,9 @@ text-align: center;
       font-size: 10px;
       color: white;
     }
+
+
+
+
+
+    

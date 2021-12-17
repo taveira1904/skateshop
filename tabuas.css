@@ -5,7 +5,7 @@ body{
     /* The image used */
     
     background-image: url("imgs/idk.jpg");
-    min-height: 250px;
+    min-height: 150px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,50 +52,19 @@ em{
     color:aliceblue;
 }
 .titulo{
-    margin-top: 40px;
+float: left;
     color: white;
     text-align: center;
  
 }
 
-body .galeria{
-    position: absolute;
-    background-size: cover;
-    background-repeat: repeat-y;
-    background-image: url("imgs/background.jpg");
-   
-}
-div.gallery {
-  margin: 5px;
-  border-bottom: 1px solid #ccc;
-  float: left;
-  margin-left: 45px;
-  width: 270px;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
 
-div.gallery:hover {
-  border-bottom: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  font-size: 20px;
-  color: aliceblue;
-  padding: 20px;
-  text-align: center;
-}
 
 
 .card {
   
  display: inline-block;
-  
+  background-color: aliceblue;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 350px;
   margin: auto;
@@ -112,12 +81,14 @@ div.desc {
   color: grey;
   font-size: 22px;
 }
+.card img{
+  margin-top: 1px;
+}
 
 .card button {
   border: none;
   outline: 0;
   padding: 12px;
-
   color: white;
   background-color: #000;
   text-align: center;
@@ -130,24 +101,9 @@ div.desc {
   opacity: 0.7;
 }
 
+.compras{
+  background-image: url("imgs/background.jpg");
+}
 
 
 
-
-
-
-/*
-  <div class="galeria">
-
-      <div class="gallery">
-        <a target="_blank" href="">
-          <img src="imgs/tabua-baker-justin-figgy.png" alt="Cinque Terre" width="600" height="400">
-        </a>
-        <div class="desc">Tábua "Baker"<br>59.90€</div>
-      </div>
-      
-  
-      
-   
-    </div>
-    
