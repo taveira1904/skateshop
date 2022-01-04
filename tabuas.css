@@ -62,9 +62,9 @@ float: left;
 
 
 .card {
-  
+  border-radius: 15px;
  display: inline-block;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 350px;
   margin: auto;
@@ -122,15 +122,30 @@ float: left;
   float: left;
   padding: 8px 16px;
   text-decoration: none;
+  border-radius: 10px;
   transition: background-color .3s;
   border: 1px solid #ddd;
   margin: 0 4px;
 }
 
 .pagination a.active {
-  background-color: #e29044;
-  color: white;
+  background-color: #fda004;
+  color: black;
   border: 1px solid #e29044;;
 }
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+footer{
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+      
+    }
+    footer h1{
+      text-align: center;
+      font-family: monospace;
+      font-size: 10px;
+      color: white;
+    }
