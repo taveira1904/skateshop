@@ -53,6 +53,7 @@ em{
 }
 .titulo{
 float: left;
+margin-left: 100px;
     color: white;
     text-align: center;
  
@@ -149,3 +150,4 @@ footer{
       font-size: 10px;
       color: white;
     }
+    

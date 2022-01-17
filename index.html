@@ -19,28 +19,33 @@
         <div class="container">
           <div class="topnav">
             <img src="imgs/3flip1-removebg-preview__1_-removebg-preview.png">
-            <a href="#"><em>Home</em></a>
-            <a href="tabuas.html">Tábuas</a>
-            <a href=" rolamentos.html ">Rolamentos</a>
-             <a href="lixas.html">Lixas</a>
-             <a href="#contact">Trucks</a>
-            <a href="#section1  ">Sk8 Arts</a>
-            <a href="galeria.html">Galeria</a>
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="#"><em>Home</em></a>
+              <a href="tabuas.html">Tabuas</a>
+              <a href="rolamentos.html">Rolamentos</a>
+              <a href="lixas.html">Lixas</a>
+              <a href="trucks.html">Trucks</a>
+              <a href="#">SK8 Arts</a>
+              <a href="#">Galeria</a>
+            </div>
+            
+            <!-- Use any element to open the sidenav -->
+         
 
-            <div class="login">
-              <a href="login.html">Login/Registar</a>
+           
             </div>
            
     
             
            
             
-          </div>
+        
           <h2>Compra com a maior das <em>seguranças</em></h2>
         
           <h3><br><br><br><br><br><br>Dedicados a todos os sk8ters,<br> nós unimos forças para tornar o skate seguro,<br> divertido, desafiador e apaixonado.</h3>
           <a href="#destaque"> <button class="botao">Shop now</button></a>
-         <a href="#sobrenos"> <button class="botao1">Descobre mais !</button></a>
+          <span onclick="openNav()"> <button class="botao1">Descobre mais !</button></a>
         </div>
       </div>
       
@@ -211,9 +216,7 @@ function showSlides(n) {
   <div class="content">
       <h1><i class="fas fa-quote-left"></i></i></h1>
       <p>"Há uma visão muito clara que tenho sobre o que é skatar!"</p>
-        <div class="stars">
-
-        </div>
+    
   </div>
 </div>
 
@@ -230,6 +233,23 @@ function showSlides(n) {
     </footer>
 
   </div>
+
+
+
+
+ 
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+  }
+</script>
 
 
 </body>

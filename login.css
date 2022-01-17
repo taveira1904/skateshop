@@ -92,34 +92,42 @@ background-image: url("imgs/bricks.jfif");
     outline: none;
     border-bottom: 2px solid #B0B3B9;
   }
-  .box-form .right .remember-me--forget-password {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .box-form .right .remember-me--forget-password input {
-    margin: 0;
-    margin-right: 7px;
-    width: auto;
-  }
+ 
   .box-form .right button {
+    
     float: right;
     color: white;
     font-size: 16px;
-    padding: 12px 35px;
-    border-radius: 50px;
+    padding: 12px 105px;
+    border-radius: 10px;
     display: inline-block;
     border: 0;
     outline: 0;
     box-shadow: 0px 4px 20px 0px orange;
-    background-image: linear-gradient(135deg, #f5e170 50%, rgba(20, 20, 20, 0.534) 50%);
+    background-image: linear-gradient(to right, #F09819 0%, #EDDE5D  51%, #F09819  100%);
     
   }
   .box-form .right button:hover{
-    
-    background-image: linear-gradient(135deg, rgba(20, 20, 20, 0.534) 50%,   #f5e170 50%);
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+
     cursor:pointer;
   }
+  button{
+      margin: 10px;
+      padding: 15px 10px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;            
+      box-shadow: 0 0 20px #eee;
+      border-radius: 10px;
+      display: block;
+    }
+  
  
   label {
     display: block;
@@ -165,24 +173,4 @@ background-image: url("imgs/bricks.jfif");
   }
 
   
-         .btn-grad {background-image: linear-gradient(to right, #F09819 0%, #EDDE5D  51%, #F09819  100%)}
-         .btn-grad {
-            margin: 10px;
-            padding: 15px 10px;
-            text-align: center;
-            text-transform: uppercase;
-            transition: 0.5s;
-            background-size: 200% auto;
-            color: white;            
-            box-shadow: 0 0 20px #eee;
-            border-radius: 10px;
-            display: block;
-          }
-
-          .btn-grad:hover {
-            background-position: right center; /* change the direction of the change here */
-            color: #fff;
-            text-decoration: none;
-            cursor: pointer;
-          }
-         
+      
