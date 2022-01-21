@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="imgs/skatered.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
@@ -26,7 +27,7 @@
                 <h5>Login</h5>
                 <p>Não tem uma conta?  <a href="registar.html">Criar conta nova</a> demora menos de 1 minuto</p>
                 <div class="inputs">
-                    <input type="text" placeholder="Username" required>
+                    <input type="text" pattern="[^ @]*@[^ @]*" placeholder="E-mail" required>
                     <br>
                     <input type="password" placeholder="Password" required>
                 </div>

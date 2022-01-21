@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="imgs/skatered.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="galeria.css">
@@ -11,24 +12,31 @@
 
 
 
-    
-    <div class="bg-img">
-        <div class="container">
-          <div class="topnav">
-            <img src="imgs/3flip1-removebg-preview__1_-removebg-preview.png">
-             <a href="index.html">Home</a>
-            <a href="tabuas.html">Tábuas</a>
-            <a href=" rolamentos.html ">Rolamentos</a>
-             <a href="lixas.html">Lixas</a>
-             <a href="#contact">Trucks</a>
-            <a href="#section1  ">Sk8 Arts</a>
-            <a href="#section1  "><em>Galeria</em></a>
-           
-               
-        </div> 
-        <div class="titulo">
-        <h1></h1>
-    </div>
+  <div class="bg-img">
+    <div class="container">
+      <div class="topnav">
+        <img src="imgs/3flip1-removebg-preview__1_-removebg-preview.png">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Home</a>
+          <a href="tabuas.html">Tabuas</a>
+          <a href="rolamentos.html">Rolamentos</a>
+          <a href="lixas.html">Lixas</a>
+          <a href="trucks.html">Trucks</a>
+         
+          <a href="galeria.html"><em>Galeria</em></a>
+        </div>
+
+    </div> 
+
+  <div class="hamburguer">
+    <span onclick="openNav()"><svg viewBox="0 0 100 80" width="40" height="40">
+      <rect width="100" height="20"></rect>
+      <rect y="30" width="100" height="20"></rect>
+      <rect y="60" width="100" height="25"></rect>
+   
+    </svg>
+  </div>
     </div>
   </div>
 </header>
@@ -39,15 +47,21 @@
     <div class="row">
         <div class="column">
           <img src="imgs/local.webp">
-          <img src="imgs/vans.jpg">
+          <img src="imgs/nyjahv3.jpg">
           <img src="imgs/david.jpg">
           <img src="imgs/vasco.jpg">
+          <img src="imgs/nyjahv2.jpg">
 
         </div>
         <div class="column">
             <img src="imgs/tomas.jpg">
             <img src="imgs/ribeiro.jfif">
             <img src="imgs/nyjah.png">
+            <img src="imgs/ribeiro.jpg">
+            <img src="imgs/giraud2.jpg">
+            <img src="imgs/sls.jpg">
+            <img src="imgs/giraud3.jpg">
+            
 
           
         </div>
@@ -55,9 +69,10 @@
             <img src="imgs/somera.jfif">
                <img src="imgs/shaneoneil.jpg">
                <img src="imgs/vitor.jpg">
-               
+               <img src="imgs/giraud.jpg">
         </div>
         <div class="column">
+         
           
          
         </div>
@@ -72,7 +87,18 @@
       </div>
 
 
-
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+        }
+      </script>
 
 </body>
 </html>
